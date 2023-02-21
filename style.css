@@ -410,12 +410,8 @@ section {
 @media (max-width:362px) {
 
     header {
-        padding: 12px 10px;
+        padding: 12px 20px;
     }
-}
-
-
-@media (max-width:350px) {
 
     .logo {
         width: 30%
@@ -424,6 +420,10 @@ section {
     .navigation a {
         width: 70%;
     }
+}
+
+
+@media (max-width:350px) {
 
     .projects-card {
         width: 90%;
