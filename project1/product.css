@@ -23,7 +23,7 @@ body {
 }
 
 .up img {
-    width: 45px;
+    width: 40px;
 }
 
 /* Start style header */
@@ -37,7 +37,7 @@ header {
 }
 
 header .logo img {
-    width: 100%;
+    width: 90%;
     display: block;
 }
 
@@ -75,17 +75,17 @@ nav div .menu {
     align-items: center;
     flex-direction: row;
     z-index: 1;
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 nav div a {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    font-size: 1rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: 0.4s;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 nav div ul li a:hover {
@@ -168,7 +168,7 @@ header section {
 
 header .socail img {
     transform: translateY(4px);
-    width: 25px;
+    width: 20px;
     margin-right: 10px;
     transition: 0.4s;
 }
@@ -179,10 +179,10 @@ header .socail img:hover {
 }
 
 header .socail input {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-right: 10px;
     width: 150px;
-    height: 30px;
+    height: 25px;
     border-radius: 10px;
     text-align: center;
     border: 2px solid #ffffff;
@@ -195,39 +195,38 @@ header input::placeholder {
 
 input[type="search"]:focus {
     background-color: transparent;
+    font-size: 0.8rem;
     color: white;
     border-color: #fd1813;
     outline: none;
 }
 
-header section a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-}
-
 header .about {
     font-family: 'Titillium Web', sans-serif;
-    margin-top: 6%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .about h1 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 900;
     text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.192);
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .about p {
     width: 78%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: justify;
     text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.336);
+}
+
+.about p+p {
+    display: none;
 }
 
 
@@ -240,7 +239,7 @@ header .logsign {
 header .logsign a {
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 header .login {
@@ -285,7 +284,7 @@ header .quality {
 }
 
 header .quality img {
-    width: 150px;
+    width: 120px;
     margin-right: 4%;
     transition: 1s;
 }
@@ -303,12 +302,12 @@ main h1 {
     font-weight: 900;
     text-align: center;
     margin: 20px 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #111111;
 }
 
 main .backlaptop h1 {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 main .seachlap h2,
@@ -318,8 +317,8 @@ main .seachcomp h2 {
     font-family: 'Titillium Web', sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 1.8rem;
-    margin-right: 25px;
+    font-size: 1.5rem;
+    margin-right: 3%;
 }
 
 
@@ -364,7 +363,7 @@ main section .seachcomp {
 }
 
 main section input {
-    font-size: 1vw;
+    font-size: 0.8rem;
     color: white;
     width: 20%;
     height: 50px;
@@ -379,7 +378,7 @@ main section select {
     width: 20%;
     height: 50px;
     padding-left: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: transparent;
     margin-right: 25px;
     border: 2px solid white;
@@ -403,13 +402,13 @@ main section input:focus {
 }
 
 main section input::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
 
 }
 
 main section button[type="submit"] {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 20%;
     height: 50px;
     background-color: white;
@@ -450,7 +449,7 @@ main .lapshop article img {
 main .lapshop article h2 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -462,19 +461,19 @@ main .lapshop article h2:hover {
 main .lapshop article h3 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: #fd1813;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
 }
 
 main .lapshop article button {
     background-color: #fd1813;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
     width: 40%;
-    height: 50px;
+    height: 40px;
     margin: 0 30%;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -506,36 +505,18 @@ main .lapshop a:visited {
 footer .social {
     padding: 50px 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+footer .social div {
+    display: flex;
+    flex-direction: column;
 }
 
 footer .social img {
-    width: 35px;
+    width: 30px;
     margin-bottom: 10px;
-}
-
-.pdfb {
-    margin-left: 25px;
-}
-
-.pdtw {
-    margin-left: 15px;
-}
-
-.pdyou {
-    margin-left: 20px;
-}
-
-.pdins {
-    margin-left: 24px;
-}
-
-.pdds {
-    margin-left: 13px;
-}
-
-.pdth {
-    margin-left: 11px;
+    align-self: center;
 }
 
 footer .platform h1 {
@@ -545,7 +526,7 @@ footer .platform h1 {
 footer .social a {
     color: #111111;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 0.4s;
 }
 
@@ -565,14 +546,14 @@ footer .copyright {
 }
 
 footer .copyright .log a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #ffffff;
     margin-right: 20px;
 }
 
 footer .copyright p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #ffffff;
 }
 
@@ -589,7 +570,7 @@ footer .copyright ul li {
 }
 
 footer .copyright ul li a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #ffffff;
     transition: 0.4s;
     text-decoration: none;
@@ -616,13 +597,13 @@ footer .newsletter {
 footer .newsletter h1 {
     color: white;
     font-weight: bold;
-    font-size: 1.8rem;
-    margin-right: 25px;
+    font-size: 1.5rem;
+    margin-right: 3%;
 }
 
 footer .newsletter input {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
     width: 150px;
     height: 50px;
@@ -636,13 +617,13 @@ footer .newsletter input:focus {
 }
 
 .newsletter input::placeholder {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
 
 }
 
 footer .newsletter button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 150px;
     height: 50px;
     background-color: white;
@@ -658,7 +639,7 @@ footer .newsletter button:hover {
 
 footer .platform {
     color: white;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 50px 10%;
     background-color: #111111;
     display: flex;
@@ -666,11 +647,11 @@ footer .platform {
 }
 
 footer .platform .contact .marg div {
-    font-size: 1rem;
+    font-size: 0.80rem;
 }
 
 footer .platform .contact img {
-    width: 20px;
+    width: 15px;
     margin-right: 20px;
 }
 
@@ -685,14 +666,13 @@ footer .bestbying .parent {
 }
 
 footer .bestbying .parent .title {
-    font-size: 0.9rem;
-    width: 50%;
+    font-size: 0.8rem;
 }
 
 footer .bestbying .parent span {
     color: #fd1813;
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: 0.8rem;
 }
 
 footer .bestbying .parent div {
@@ -707,8 +687,8 @@ footer .bestbying .parent div:hover {
 }
 
 footer .bestbying img {
-    width: 90px;
-    height: 80px;
+    width: 80px;
+    height: 70px;
     margin-bottom: 5px;
     transition: 0.5s;
 }
@@ -720,11 +700,11 @@ footer .download {
 
 footer .download button {
     color: white;
-    font-size: 0.8rem;
-    padding: 8px;
-    margin: 8px;
-    width: 170px;
-    height: 80px;
+    font-size: 0.7rem;
+    padding: 12px;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.521);
     cursor: pointer;
@@ -746,12 +726,12 @@ footer .download button .appplatform {
 }
 
 footer .download button img {
-    width: 30px;
+    width: 25px;
     margin-right: 20px;
 }
 
 footer .download button .parag {
-    margin-bottom: 1vh;
+    margin-bottom: 5px;
 }
 
 /* Animation */
@@ -778,7 +758,7 @@ footer .download button .parag {
     }
 }
 
-@media screen and (max-width:1170px) {
+@media screen and (max-width:1106px) {
 
     .up img {
         width: 35px;
@@ -812,7 +792,7 @@ footer .download button .parag {
 
     nav div .menu li a {
         padding: 30px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         transition: 0.5s;
     }
 
@@ -821,26 +801,26 @@ footer .download button .parag {
     }
 
     header .about {
-        margin: 10% 0;
+        margin: 7% 0;
     }
 
     .about h1 {
-        font-size: 3rem;
-        margin-bottom: 5%;
+        font-size: 2.8rem;
+        margin-bottom: 4%;
     }
 
     .about p {
         width: 85%;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
 
     header .logsign {
-        margin-bottom: 12%;
+        margin-bottom: 6%;
     }
 
     header .logsign a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     header .login {
@@ -849,15 +829,15 @@ footer .download button .parag {
 
 
     header .quality img {
-        width: 130px;
+        width: 120px;
     }
 
     main h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     main .backlaptop h1 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     main .lapshop article {
@@ -866,24 +846,24 @@ footer .download button .parag {
     }
 
     main .lapshop article h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
 
     main .lapshop article h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     main .lapshop article button {
 
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     main .seachlap h2,
     main .seachgame h2,
     main .seachperi h2,
     main .seachcomp h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
 
@@ -891,7 +871,7 @@ footer .download button .parag {
     main section .seachgame,
     main section .seachperi,
     main section .seachcomp {
-        padding: 80px 10%;
+        padding: 60px 10%;
     }
 
     main section input {
@@ -920,7 +900,7 @@ footer .download button .parag {
     }
 
     footer .copyright .terms {
-        margin-top: 2%;
+        margin-top: 1%;
     }
 
     footer .copyright .log {
@@ -928,11 +908,15 @@ footer .download button .parag {
     }
 
     footer .copyright .log a {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
     }
 
     footer .newsletter h1 {
         font-size: 1.4rem;
+    }
+
+    footer .newsletter {
+        padding-left: 20%;
     }
 
     footer .newsletter input {
@@ -947,13 +931,17 @@ footer .download button .parag {
         height: 5vh;
     }
 
+    footer .platform {
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
 
     footer .platform .contact .marg div {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     footer .platform .contact img {
-        width: 20px;
+        width: 18px;
         margin-right: 20px;
     }
 
@@ -975,14 +963,10 @@ footer .download button .parag {
 
     footer .download button {
         font-size: 0.8rem;
-        padding: 8px;
-        margin: 8px;
-        width: 170px;
-        height: 80px;
     }
 
     footer .download button img {
-        width: 20px;
+        width: 25px;
         margin-right: 15px;
     }
 
@@ -1000,22 +984,21 @@ footer .download button .parag {
     }
 
     .about h1 {
-        font-size: 2.5rem;
-        margin-bottom: 5%;
+        font-size: 2.3rem;
     }
 
     .about p {
+        display: none;
+    }
+
+    .about p+p {
+        display: block;
         width: 90%;
         font-size: 1rem;
     }
 
-
-    header .logsign {
-        margin-bottom: 12%;
-    }
-
     header .logsign a {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     header .quality img {
@@ -1023,21 +1006,21 @@ footer .download button .parag {
     }
 
     main h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     main .lapshop article h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
 
     main .lapshop article h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     main .lapshop article button {
 
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     footer .platform h1 {
@@ -1046,57 +1029,50 @@ footer .download button .parag {
 
     footer .download button {
         font-size: 0.6rem;
-        padding: 6px;
-        margin: 6px;
-        width: 150px;
-        height: 60px;
-    }
-
-
-    footer .download button .appplatform {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .download button img {
-        width: 30px;
-        margin-right: 20px;
-    }
-
-    footer .platform .contact .marg div {
-        font-size: 0.8rem;
     }
 
 }
 
 
 @media screen and (max-width:725px) {
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p+p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    header .logsign a {
+        font-size: 0.8rem;
+    }
+
+    header .quality img {
+        width: 80px;
+    }
+
     main h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     main .lapshop article h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
 
     main .lapshop article h3 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     main .lapshop article button {
 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     footer .social a {
         display: none;
-    }
-
-    footer .social {
-        padding: 50px 3%;
-        margin-left: -5%;
     }
 
     footer .platform {
@@ -1104,7 +1080,6 @@ footer .download button .parag {
     }
 
     footer .platform h1 {
-        font-size: 1.1rem;
         text-align: center;
     }
 
@@ -1121,7 +1096,7 @@ footer .download button .parag {
 @media screen and (max-width:656px) {
 
     nav div .menu li a {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     header .logo img {
@@ -1130,44 +1105,34 @@ footer .download button .parag {
     }
 
     .about h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin-bottom: 5%;
     }
 
-    .about p {
-        width: 90%;
-        font-size: 0.8rem;
-    }
-
-
     header .logsign {
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
     header .logsign a {
         font-size: 0.7rem;
     }
 
-    header .quality img {
-        width: 80px;
-    }
-
     main h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     main .lapshop article h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
     main .lapshop article h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     main .lapshop article button {
 
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     footer .social a {
@@ -1179,23 +1144,30 @@ footer .download button .parag {
     }
 
     .newsletter input::placeholder {
-        font-size: 0.67rem;
+        font-size: 0.6rem;
     }
 }
 
 @media screen and (max-width:550px) {
 
-    nav div .menu li a {
-        font-size: 1rem;
+    .about h1 {
+        font-size: 1.5rem;
     }
 
-    header .logo img {
-        width: 80%;
-        display: block;
+    .about p+p {
+        font-size: 0.8rem;
+    }
+
+    header .logsign a {
+        font-size: 0.6rem;
+    }
+
+    header .quality img {
+        width: 70px;
     }
 
     main h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin: 10px 0;
     }
 
@@ -1209,17 +1181,71 @@ footer .download button .parag {
     }
 
     main .lapshop article h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
 
     main .lapshop article h3 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     main .lapshop article button {
 
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    main .seachlap h2,
+    main .seachgame h2,
+    main .seachperi h2,
+    main .seachcomp h2 {
+        font-size: 1.1rem;
+    }
+
+
+    main section .seachlap,
+    main section .seachgame,
+    main section .seachperi,
+    main section .seachcomp {
+        padding: 110px 8%;
+    }
+
+    main section input {
+        width: 80%;
+        height: 5vh;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    main section select {
+        width: 80%;
+        height: 5vh;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    main section button[type="submit"] {
+        width: 80%;
+        height: 5vh;
+    }
+
+    footer .newsletter {
+        padding: 110px 8%;
+    }
+
+    footer .newsletter h1 {
+        font-size: 1.1rem;
+    }
+
+    footer .newsletter input {
+        width: 80%;
+        height: 5vh;
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    footer .newsletter button {
+        width: 80%;
+        height: 5vh;
     }
 
     footer .copyright {
@@ -1227,11 +1253,11 @@ footer .download button .parag {
     }
 
     footer .copyright .log a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     footer .copyright p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
 
@@ -1240,18 +1266,60 @@ footer .download button .parag {
     }
 
     footer .copyright ul li a {
+        font-size: 0.6rem;
+    }
+
+    footer .platform h1 {
+        font-size: 1rem;
+    }
+
+    footer .platform .contact .marg div {
         font-size: 0.7rem;
     }
 
+    footer .platform .contact img {
+        width: 15px;
+    }
+
+    footer .social img {
+        width: 25px;
+    }
 
 }
 
 
 @media screen and (max-width:518px) {
 
+    nav div .menu li a {
+        font-size: 0.8rem;
+    }
+
     header .logo img {
-        width: 70%;
+        width: 60%;
         display: block;
+    }
+
+    .about h1 {
+        font-size: 5vw;
+        margin-bottom: 5%;
+    }
+
+    .about p+p {
+        width: 90%;
+        font-size: 2.5vw;
+    }
+
+
+    header .logsign {
+        margin-bottom: 8%;
+    }
+
+    header .logsign a {
+        font-size: 1.8vw;
+    }
+
+    header .quality img {
+        width: 60px;
     }
 
     .checkmenu {
@@ -1286,119 +1354,20 @@ footer .download button .parag {
         width: 20px;
     }
 
-    main .seachlap h2,
-    main .seachgame h2,
-    main .seachperi h2,
-    main .seachcomp h2 {
-        font-size: 1.2rem;
-    }
-
-
-    main section .seachlap,
-    main section .seachgame,
-    main section .seachperi,
-    main section .seachcomp {
-        padding: 130px 8%;
-    }
-
-    main section input {
-        width: 80%;
-        height: 5vh;
-        margin-right: 25px;
-        margin-bottom: 10px;
-    }
-
-    main section select {
-        width: 80%;
-        height: 5vh;
-        margin-right: 25px;
-        margin-bottom: 10px;
-    }
-
-    main section button[type="submit"] {
-        width: 80%;
-        height: 5vh;
-    }
-
-    footer .newsletter {
-        padding: 130px 8%;
-    }
-
-    footer .newsletter h1 {
-        font-size: 1.2rem;
-    }
-
-    footer .newsletter input {
-        width: 80%;
-        height: 5vh;
-        margin-right: 25px;
-        margin-bottom: 10px;
-    }
-
-    footer .newsletter button {
-        width: 80%;
-        height: 5vh;
-    }
-
-}
-
-
-@media screen and (max-width:500px) {
-    nav div .menu li a {
+    footer .platform h1 {
         font-size: 0.9rem;
     }
 
-    header .logo img {
-        width: 60%;
-        display: block;
+    footer .platform .contact .marg div {
+        font-size: 0.65rem;
     }
 
-    .about h1 {
-        font-size: 5.5vw;
-        margin-bottom: 5%;
+    footer .platform .contact img {
+        width: 13px;
     }
 
-    .about p {
-        width: 90%;
-        font-size: 2.5vw;
-    }
-
-
-    header .logsign {
-        margin-bottom: 8%;
-    }
-
-    header .logsign a {
-        font-size: 2vw;
-    }
-
-    header .quality img {
-        width: 60px;
-    }
-
-    main h1 {
-        font-size: 1.5rem;
-    }
-
-    main .lapshop article h2 {
-        font-size: 1rem;
-    }
-
-
-    main .lapshop article h3 {
-        font-size: 0.8rem;
-    }
-
-    main .lapshop article button {
-
-        font-size: 0.7rem;
-    }
-
-    footer .social {
-        padding: 50px 1%;
-        transform: translateX(-7px);
-    }
 }
+
 
 @media screen and (max-width:411px) {
 
@@ -1409,13 +1378,12 @@ footer .download button .parag {
     }
 
     .about h1 {
-        font-size: 5vw;
-        margin-bottom: 5%;
+        font-size: 4.8vw;
     }
 
-    .about p {
+    .about p+p {
         width: 90%;
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
 
 
@@ -1424,12 +1392,12 @@ footer .download button .parag {
     }
 
     header .logsign a {
-        font-size: 1.5vw;
+        font-size: 2vw;
         padding: 5px 15px;
     }
 
     header .quality img {
-        width: 55px;
+        width: 50px;
     }
 
 
@@ -1447,21 +1415,16 @@ footer .download button .parag {
         margin-right: 15px;
     }
 
-    footer .social {
-        padding: 50px 1%;
-        margin-left: -3%;
-    }
-
     footer .copyright {
         padding: 15px 5%;
     }
 
     footer .copyright .log a {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     footer .copyright p {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
 
@@ -1470,7 +1433,19 @@ footer .download button .parag {
     }
 
     footer .copyright ul li a {
-        font-size: 3vw;
+        font-size: 2.5vw;
+    }
+
+    footer .platform h1 {
+        font-size: 0.8rem;
+    }
+
+    footer .platform .contact .marg div {
+        font-size: 0.6rem;
+    }
+
+    footer .platform .contact img {
+        width: 12px;
     }
 
 }
@@ -1484,13 +1459,13 @@ footer .download button .parag {
     }
 
     .about h1 {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         margin-bottom: 5%;
     }
 
-    .about p {
+    .about p+p {
         width: 100%;
-        font-size: 1.8vw;
+        font-size: 2.1vw;
     }
 
 
@@ -1499,20 +1474,15 @@ footer .download button .parag {
     }
 
     header .logsign a {
-        font-size: 2vw;
-        padding: 5px 15px;
+        font-size: 1.8vw;
+        padding: 5px 12px;
     }
 
     header .quality img {
-        width: 45px;
+        width: 40px;
     }
-
 
     footer .social img {
-        width: 10vw;
-    }
-
-    footer .social {
-        transform: translateX(-10px);
+        width: 22px;
     }
 }
