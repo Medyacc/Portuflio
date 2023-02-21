@@ -395,44 +395,43 @@ section {
 
 
 @media (max-width:435px) {
-    header {
-        flex-direction: column;
-        padding: 12px 0;
-    }
 
     .logo {
         font-weight: 700;
-        font-size: 1.5em;
-        margin-bottom: 13px;
-        align-self: center;
-    }
-
-    .navigation {
-        transform: translateX(-15px);
+        font-size: 1em;
     }
 
     .navigation a {
-        font-size: 1.2em;
-        padding-left: 40px;
+        font-size: 1em;
+        padding-left: 10px;
     }
 }
 
+@media (max-width:362px) {
+
+    header {
+        padding: 12px 10px;
+    }
+}
+
+
 @media (max-width:350px) {
-    .projects-card {
-        width: 90%;
+
+    .logo {
+        width: 30%
     }
 
     .navigation a {
-        padding-left: 35px;
+        width: 70%;
+    }
+
+    .projects-card {
+        width: 90%;
     }
 }
 
 @media (max-width:320px) {
     body {
         font-size: 10px;
-    }
-
-    .navigation a {
-        padding-left: 30px;
     }
 }
