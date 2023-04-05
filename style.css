@@ -425,13 +425,13 @@ section {
 
 @media (max-width:325px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
 @media (max-width:279px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .logo {
