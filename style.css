@@ -49,11 +49,7 @@ section {
     background-color: #131313;
     display: flex;
     align-items: center;
-    background: url(images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: #131313;
 }
 
 .main h2 {
