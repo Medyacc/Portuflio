@@ -247,49 +247,6 @@ section {
     padding: 0 12px 0 0;
 }
 
-
-
-@media (max-width:1700px) {
-    .main {
-        background: url(images/background2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-
-@media (max-width:1400px) {
-    .main {
-        background: url(images/background3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-
-
-@media (max-width:1350px) {
-    .main {
-        background: url(images/background4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-
-@media (max-width:1185px) {
-    .main {
-        background: url(images/background5.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-        background-attachment: fixed;
-    }
-}
-
 @media (max-width:1145px) {
     header {
         padding: 10px 150px;
@@ -365,14 +322,6 @@ section {
 
     .navigation a {
         font-size: 1em;
-    }
-
-    .main {
-        background: url(images/background6.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-        background-attachment: fixed;
     }
 }
 
