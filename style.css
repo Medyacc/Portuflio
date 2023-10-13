@@ -561,6 +561,7 @@ section {
     border-width: 18px;
     border-style: solid;
     border-color: transparent var(--mainColor) transparent transparent;
+    cursor: pointer;
 }
 
 .pageColor.active {
