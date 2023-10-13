@@ -151,12 +151,37 @@ header {
     font-size: 1.8em;
 }
 
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
 .navigation a {
     color: var(--mainColor);
+    display: block;
     font-size: 1.1em;
     font-weight: 500;
-    padding-left: 30px;
     transition: 0.5s;
+    padding: 5px;
+    position: relative;
+}
+
+.navigation a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+}
+
+.navigation a:hover::before {
+    border: 2px solid var(--secondColor);
+    width: 98%;
+    height: 98%;
 }
 
 .navigation a:hover {
@@ -406,10 +431,6 @@ section {
         padding: 10px 150px;
     }
 
-    .navigation a {
-        padding-left: 20px;
-    }
-
     .title {
         font-size: 1.8em;
     }
@@ -430,10 +451,6 @@ section {
 @media (max-width:1023px) {
     header {
         padding: 12px 20px;
-    }
-
-    .navigation a {
-        padding-left: 10px;
     }
 
     section {
@@ -513,7 +530,6 @@ section {
 
     .navigation a {
         font-size: 0.9em;
-        padding-left: 7px;
     }
 }
 
