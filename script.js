@@ -52,3 +52,21 @@ menuDiv.addEventListener("click", function () {
 menuDiv.addEventListener("click", function () {
     MenuDiv.classList.toggle("toggleMenu");
 });
+
+
+let up = document.querySelector(".upButton");
+
+window.onscroll = function () {
+    if (window.scrollY >= 100) {
+        up.style.display = "block";
+    }
+    else {
+        up.style.display = "none";
+    }
+}
+
+up.onclick = function () {
+    window.scrollTo({
+        top: 0
+    })
+}
