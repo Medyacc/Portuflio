@@ -1,8 +1,34 @@
 let pageColor = document.querySelector(".pageColor");
+let colors = document.querySelectorAll(".color");
+let getImage = document.querySelectorAll(".projects-card.soon .project-image img");
 
 
 if (window.localStorage.getItem("MainColor") && window.localStorage.getItem("SecondColor")) {
     document.styleSheets[1].rules[2].style.cssText = `--mainColor: ${window.localStorage.getItem("MainColor")}; --secondColor: ${window.localStorage.getItem("SecondColor")}`;
+}
+
+if (window.localStorage.getItem("imageone") || window.localStorage.getItem("imagetwo") || window.localStorage.getItem("imagethree") || window.localStorage.getItem("imagefoor")) {
+    if (document.styleSheets[1].rules[2].style.cssText == "--mainColor: #3a6cf4; --secondColor: #3a6cf4;") {
+        console.log(document.styleSheets[1].rules[2].style.cssText)
+        for (let i = 0; i < getImage.length; i++) {
+            getImage[i].src = `images/${window.localStorage.getItem("imageone")}.png`;
+        }
+    }
+    if (document.styleSheets[1].rules[2].style.cssText == "--mainColor: #D80032; --secondColor: #D80032;") {
+        for (let i = 0; i < getImage.length; i++) {
+            getImage[i].src = `images/${window.localStorage.getItem("imagetwo")}.png`;
+        }
+    }
+    if (document.styleSheets[1].rules[2].style.cssText == "--mainColor: #E55604; --secondColor: #E55604;") {
+        for (let i = 0; i < getImage.length; i++) {
+            getImage[i].src = `images/${window.localStorage.getItem("imagethree")}.png`;
+        }
+    }
+    if (document.styleSheets[1].rules[2].style.cssText == "--mainColor: #419197; --secondColor: #419197;") {
+        for (let i = 0; i < getImage.length; i++) {
+            getImage[i].src = `images/${window.localStorage.getItem("imagefoor")}.png`;
+        }
+    }
 }
 
 pageColor.addEventListener("click", function () {
@@ -10,21 +36,32 @@ pageColor.addEventListener("click", function () {
 });
 
 
-let colors = document.querySelectorAll(".color");
 
 colors.forEach(elm => {
     elm.addEventListener("click", function () {
         if (elm.classList.contains("one")) {
-            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #3a6cf4; --secondColor: #601cfc"
+            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #3a6cf4; --secondColor: #601cfc";
+            for (let i = 0; i < getImage.length; i++) {
+                getImage[i].src = "images/one.png";
+            }
         }
         if (elm.classList.contains("two")) {
-            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #D80032;--secondColor: #FF6969"
+            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #D80032;--secondColor: #FF6969";
+            for (let i = 0; i < getImage.length; i++) {
+                getImage[i].src = "images/two.png";
+            }
         }
         if (elm.classList.contains("three")) {
-            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #E55604;--secondColor: #FFB000"
+            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #E55604;--secondColor: #FFB000";
+            for (let i = 0; i < getImage.length; i++) {
+                getImage[i].src = "images/three.png";
+            }
         }
         if (elm.classList.contains("foor")) {
-            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #419197;--secondColor: #64CCC5"
+            document.styleSheets[1].rules[2].style.cssText = "--mainColor: #419197;--secondColor: #64CCC5";
+            for (let i = 0; i < getImage.length; i++) {
+                getImage[i].src = "images/foor.png";
+            }
         }
     })
 })
@@ -34,6 +71,12 @@ colors.forEach(elm => {
     elm.addEventListener("click", e => {
         window.localStorage.setItem("MainColor", e.currentTarget.dataset.colorone);
         window.localStorage.setItem("SecondColor", e.currentTarget.dataset.colorone);
+        getImage.forEach(e => {
+            window.localStorage.setItem("imageone", e.dataset.image1);
+            window.localStorage.setItem("imagetwo", e.dataset.image2);
+            window.localStorage.setItem("imagethree", e.dataset.image3);
+            window.localStorage.setItem("imagefoor", e.dataset.image4);
+        })
     })
 })
 
@@ -70,3 +113,5 @@ up.onclick = function () {
         top: 0
     })
 }
+
+
