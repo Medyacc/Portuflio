@@ -2,6 +2,14 @@ let pageColor = document.querySelector(".pageColor");
 let colors = document.querySelectorAll(".color");
 let getImage = document.querySelectorAll(".projects-card.soon .project-image img");
 let imageProjet = document.querySelector(".projects-card .project-image img");
+let headColor = document.querySelectorAll(".headColor");
+
+headColor[0].addEventListener("click", function () {
+    pageColor.classList.toggle("active");
+})
+headColor[1].addEventListener("click", function () {
+    pageColor.classList.toggle("active");
+})
 
 
 if (window.localStorage.getItem("MainColor") && window.localStorage.getItem("SecondColor")) {
@@ -121,5 +129,3 @@ up.onclick = function () {
         top: 0
     })
 }
-
-
