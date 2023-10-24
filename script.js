@@ -129,3 +129,11 @@ up.onclick = function () {
         top: 0
     })
 }
+
+
+let scrolled = document.querySelector(".scrolled");
+let heightscroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+window.addEventListener("scroll", function () {
+    let scroltop = document.documentElement.scrollTop;
+    scrolled.style.width = `${(scroltop / heightscroll) * 100}%`;
+})
