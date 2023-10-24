@@ -681,6 +681,19 @@ section {
 
 /* Up Button */
 
+/* scrolled */
+
+.scrolled {
+    height: 4px;
+    width: 0;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* scrolled */
+
 
 /* Keyframes */
 
