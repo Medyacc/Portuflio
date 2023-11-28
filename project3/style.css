@@ -73,6 +73,7 @@ header .container .nav .menu img {
     display: none;
     width: 16px;
     height: 15px;
+    cursor: pointer;
 }
 
 header .mobilelinks {
